@@ -1,0 +1,6 @@
+
+resource "tfe_workspace" "test" {
+  name         = "hcp-vault-cluster-ws"
+  organization = data.tfe_organization.hc-linnhtat-org
+  tag_names    = ["hcp-vault"]
+}
